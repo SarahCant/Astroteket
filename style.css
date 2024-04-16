@@ -60,5 +60,7 @@ table {
 }
 
 body {
-    
+    border: 5px solid var(--ramme);
+    width: 100vw;
+    height: 100vh;
 }
