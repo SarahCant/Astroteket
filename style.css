@@ -16,8 +16,8 @@ body {
     height: 100vh;
     background-color: var(--baggrund);
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 p {
@@ -25,7 +25,7 @@ p {
     font-size: 3rem;
     color: var(--ramme);
     text-align: center;
-    grid-area: 12 / 1 / 13 / 13;
+    grid-area: 3 / 1 / 4 / 4;
     align-self: end;
     translate: 0 20px;
     z-index: 9999;
@@ -35,4 +35,31 @@ p span {
     background-color: var(--astronaut);
     border: 3px solid var(--dark_neutral);
     padding: 10px;
+}
+
+.subscene {
+    display: grid;
+    grid-area: 1 / 1 / -1 / -1;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.scene1_1 {
+    
+    background-image: url(img/baggrunde/nr1.jpg);
+}
+
+.scene1_1 .astronaut {
+    grid-area: 8 / 4 / 12 / 5;
+    max-width: 100%;
+}
+
+.scene1_2 {
+    background-image: url(img/baggrunde/nr2.jpg);
+    display: none;
+}
+
+.scene1_2 .astronaut {
+    grid-area: 8 / 4 / 12 / 5;
+    max-width: 100%;
 }
