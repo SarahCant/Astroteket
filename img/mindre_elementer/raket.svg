@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 694.22 752.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffcb4b;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #363636;
+      }
+
+      .cls-3 {
+        fill: #6c9cca;
+      }
+
+      .cls-4 {
+        fill: #fd9843;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="5.67"/>
+      <feGaussianBlur result="blur" stdDeviation="8.5"/>
+      <feFlood flood-color="#ffcb4b" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Raket_komet" data-name="Raket + komet">
+    <g id="Raket">
+      <path class="cls-4" d="M655.21,199.57L495.92,47.96C556.76,20.56,623.6,3.77,694.22,0c-.62,70.18-14.36,137.54-39.01,199.57Z"/>
+      <path class="cls-4" d="M590.83,317.42c6.35,22.6,12.24,60.32-2.13,106.16-25.8,82.3-106.04,156.16-203.99,189.41,6.05-5.18,77.75-67.85,72.6-128.88-.67-7.94-2.76-17.24-7.94-26.85l22.74-73.77,78.51-63.61,40.19-2.45Z"/>
+      <path class="cls-4" d="M381.82,118.49c-22.88-5.23-60.85-9.25-105.93,7.37-80.92,29.83-150.73,113.63-179.1,213.1,4.87-6.3,63.93-81,125.14-78.88,7.96.28,17.36,1.9,27.21,6.6l72.56-26.36,59.66-81.56.46-40.27Z"/>
+      <path class="cls-3" d="M329.61,516.97l-135.46-128.92C241.74,237.19,352.2,113.07,496.25,48.28l159.29,151.61c-58.02,146.04-176.45,262.57-325.93,317.08Z"/>
+      <polygon class="cls-1" points="172.96 411.46 70.72 504.02 163.05 468.98 26.68 640.87 153.08 543.29 25.8 721.04 220.9 565.94 152.04 664.29 236 600.19 214.77 653.88 308.1 540.09 172.96 411.46"/>
+      <rect class="cls-2" x="158.13" y="448.55" width="186.57" height="31.58" transform="translate(389.42 -45.34) rotate(43.58)"/>
+      <circle class="cls-4" cx="486.11" cy="217.75" r="80.27"/>
+      <circle class="cls-2" cx="486.11" cy="217.75" r="60.81"/>
+    </g>
+  </g>
+</svg>
