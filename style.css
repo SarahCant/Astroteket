@@ -1,12 +1,30 @@
 :root {
-    --astronaut: #fff156;
+    --astronaut: #fff1e6;
     --astronaut_skygge: #EEE4DB;
     --baggrund: #091b2f;
     --ramme: #151515;
+    --dark_neutral: #363636;
 }
 
 body {
-    border: 5px solid var(--ramme);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border: 50px solid var(--ramme);
     width: 100vw;
     height: 100vh;
+    background-color: var(--baggrund);
+}
+
+p {
+    font-family: gluten;
+    font-size: 3rem;
+    color: var(--ramme);
+    text-align: center;
+    margin-top: calc(100vh - 130px);
+}
+
+p span {
+    background-color: var(--astronaut);
+    border: 3px solid var(--dark_neutral);
+    padding: 10px;
 }
