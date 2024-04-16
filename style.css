@@ -15,6 +15,9 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--baggrund);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
 
 p {
@@ -22,7 +25,10 @@ p {
     font-size: 3rem;
     color: var(--ramme);
     text-align: center;
-    margin-top: calc(100vh - 130px);
+    grid-area: 12 / 1 / 13 / 13;
+    align-self: end;
+    translate: 0 20px;
+    z-index: 9999;
 }
 
 p span {
