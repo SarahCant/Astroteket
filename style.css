@@ -270,7 +270,6 @@ p span {
 
 .scene2_2 .gas {
     grid-area: 1/6/4/9;
-    
 }
 
 .scene2_2 .grundstof {
@@ -285,7 +284,7 @@ p span {
 
 /* 2.3 */
 .scene2_3 {
-    display: ;
+    display: none;
 }
 
 .scene2_3 button {
@@ -297,7 +296,7 @@ p span {
 }
 
 .scene2_3 .gas {
-    grid-area: 4/2/5/3;
+    grid-area: 8/2/10/3;
     width: 180%;
 }
 
@@ -308,9 +307,8 @@ p span {
 }
 
 .scene2_3 .salt {
-    grid-area: 3/7/4/8;
+    grid-area: 2/9/3/10;
     width: 180%;
-
 }
 
 .scene2_3 .komet {
@@ -319,10 +317,47 @@ p span {
     transform: rotate(2deg);
 }
 
-.scene2_3 .stjerne {
-    
+.scene2_3 .stjerne1 {
+    grid-area: 2/8/4/10;
 }
 
+.scene2_3 .stjerne2 {
+    grid-area: 1/7/3/9;
+    width: 30%;
+}
+
+.scene2_3 .blaa_planet {
+    grid-area: 11/1/13/3;
+}
+
+.scene2_3 .lilla_planet {
+    grid-area: 2/2/3/4;
+}
+
+.scene2_3 .orange_planet {
+    grid-area: 2/5/3/6;
+}
+
+.scene2_3 .raket {
+    grid-area: 10/6/12/8;
+    width: 110%;
+}
+
+
+/* 2.4 */
+.scene2_4 {
+    display: ;
+}
+
+.scene2_4 .astronaut {
+    grid-area: 3/2/13/9;
+}
+
+.scene2_4 .kolbe {
+    grid-area: 1/8/6/11;
+    transform: rotate(320deg);
+    width: 110%;
+}
 
 
 
