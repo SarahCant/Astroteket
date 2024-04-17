@@ -233,7 +233,11 @@ p span {
 }
 
 .scene2_1 .astronaut {
-    grid-area: 
+   /*  grid-row-start: 5;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 5; */
+    grid-area: 13 / 5 / 5 / 1;
 
 }
 
