@@ -60,14 +60,14 @@ p span {
     z-index: 8888;
 }
 
-/* Ekstra ramme, der sækker astronauten til venstre */
+/* Ekstra ramme der dækker astronauten i venstre side */
 
 .ramme_venstre {
-    border-bottom: 50px solid var(--ramme);
-    bottom: 0;
+    border-left: 50px solid var(--ramme);
+    height: 100%;
     left: 0;
     position: absolute;
-    height: 100%;
+    top: 0;
     z-index: 8888;
 }
 
@@ -314,17 +314,6 @@ p span {
 
 /* --- SCENE 3 --- */
 
-
-/* ekstra ramme der dækker astronauten i venstre side */
-.ramme_venstre {
-    border-left: 50px solid var(--ramme);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    z-index: 8888;
-}
-
 .scene3_1 {
     display: none;
 }
@@ -336,7 +325,7 @@ p span {
 }
 
 .scene3_2 {
-    /* display: none; */
+    display: none;
 }
 
 .scene3_2 .astronaut {
