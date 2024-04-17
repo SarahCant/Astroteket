@@ -296,29 +296,6 @@ p span {
     grid-area: 11/4/12/5;
 }
 
-.scene2_3 .gas {
-    grid-area: 4/2/5/3;
-    width: 180%;
-}
-
-.scene2_3 .grundstof {
-    grid-area: 11/10/13/11;
-    width: 180%;
-    transform: rotate(340deg);
-}
-
-.scene2_3 .salt {
-    grid-area: 3/7/4/8;
-    width: 180%;
-
-}
-
-.scene2_3 .komet {
-    grid-area: 8/10/10/12;
-    width: 120%;
-    transform: rotate(2deg);
-
-}
 
 
 
@@ -374,7 +351,56 @@ p span {
 
 
 
-/* --- SCENE 3 --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//* --- SCENE 3 --- */
 
 .scene3_1 {
     display: none;
@@ -525,3 +551,103 @@ p span {
 .scene3_5 .stjerne_blaa {
     width: 10%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
