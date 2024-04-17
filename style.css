@@ -244,14 +244,10 @@ p span {
 }
 
 .scene2_1 .astronaut {
-   /*  grid-row-start: 5;
-    grid-row-end: 13;
-    grid-column-start: 1;
-    grid-column-end: 5; */
-   /*  grid-area: 13 / 5 / 5 / 1; */
    grid-area: 3 / 1 / 13 / 6;
    justify-self: end;
-   width: 150%;
+   width: 140%;
+   
 
 }
 
@@ -259,25 +255,26 @@ p span {
 
 }
 
-.scene2_1 .ramme1 {
-    border-bottom: 50px solid var(--ramme);
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 8888;
 
-}
 
-.scene2_1 .ramme2 {
-    border-left: 50px solid var(--ramme);
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    height: 100%;
-    z-index: 8889;
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
