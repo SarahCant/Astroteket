@@ -417,3 +417,48 @@ p span {
 .scene3_5 .termo_varm .info_txt {
     align-self: center;
 }
+
+/* ----------- SCENE 4 -------------- */
+
+.scene4_1 {
+    display: none;
+}
+
+.scene4_1 .astronaut {
+    grid-area: 6 / 5 / 13 / 9;
+}
+
+.scene4_1 .planetarisk_taage {
+    align-self: center;
+    grid-area: 2 / 2 / 8 / 6;
+}
+
+.scene4_1 .supernova {
+    align-self: center;
+    grid-area: 2 / 8 / 8 / 12;
+}
+
+.scene4_2 {
+    display: none;
+}
+
+.scene4_2 .astronaut {
+    grid-area: 11 / 4 / 13 / 5;
+    width: 50%;
+}
+
+.scene4_2 .planetarisk_taage {
+    align-self: center;
+    grid-area: 2 / 2 / 9 / 7;
+    width: 90%;
+}
+
+.scene4_2 .supernova {
+    align-self: center;
+    grid-area: 2 / 7 / 9 / 12;
+    justify-self: end;
+    width: 90%;
+}
+
+/* ----------- SCENE 5 -------------- */
+
