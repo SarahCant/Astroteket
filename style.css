@@ -426,7 +426,12 @@ p span {
 
 
 
-//* --- SCENE 3 --- */
+/* --- SCENE 3 --- */
+
+.info_txt {
+    color: var(--astronaut);
+    font-size: 2rem;
+}
 
 .scene3_1 {
     display: none;
@@ -486,8 +491,6 @@ p span {
 
 .scene3_3 .kulde .info_txt {
     align-self: flex-start;
-    color: var(--astronaut);
-    font-size: 2rem;
     padding-top: 10%;
 }
 
@@ -552,31 +555,55 @@ p span {
     grid-area: 7 / 6 / 11 / 9;
 }
 
-.scene3_5 > .termo {
-    grid-area: 9 / 11 / 12 / 12;
-    rotate: 10deg;
-    width: 45%;
-}
-
 .scene3_5 .stjerne_rod {
-    grid-area: 3 / 8 / 6 / 10;
-    position: relative;
+    align-self: center;
+    grid-area: 5 / 10 / 7 / 11;
+    justify-self: center;
+    width: 125%;
 }
 
-.scene3_5 .stjerne_rod .stjerne {
-    align-self: end;
-    width: 60%;
+.scene3_5 .termo_mellem {
+    align-items: center;
+    display: flex;
+    gap: 3%;
+    grid-area: 4 / 10 / 6 / 13;
+    justify-content: center;
 }
 
-.scene3_5 .stjerne_rod .termo {
-    align-self: end;
-    position: absolute;
-    width: 20%;
+.scene3_5 .termo_mellem .termo {
+    rotate: 15deg;
+    height: 75%;
+}
+
+.scene3_5 .termo_mellem .info_txt {
+    align-self: flex-start;
+    padding-top: 5%;
 }
 
 .scene3_5 .stjerne_blaa {
-    width: 10%;
+    align-self: end;
+    grid-area: 4 / 5 / 7 / 7;
+    justify-self: flex-end;
+    width: 80%;
 }
+
+.scene3_5 .termo_varm {
+    display: flex;
+    gap: 3%;
+    grid-area: 3 / 4 / 5 / 6;
+    justify-content: flex-end;
+}
+
+.scene3_5 .termo_varm .termo {
+    align-self: flex-end;
+    rotate: -20deg;
+    height: 90%;
+}
+
+.scene3_5 .termo_varm .info_txt {
+    align-self: center;
+}
+
 
 
 

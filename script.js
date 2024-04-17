@@ -9,3 +9,18 @@ const sc1Txt = [
     "Hjælp mig med at følge opskriften og se,",
     "hvordan stjerner bliver skabt og udvikler sig!"
 ];
+
+const sc3Txt = [
+    "Blandingen skal over i en skål.",
+    "Skålen er rigtig stor og har en diameter på...",
+    "...28 millioner milliarder meter.",
+    "Så skal vi røre det hele godt sammen.",
+    "Blandingen har brug for at stå et koldt sted.",
+    "Helst så koldt som muligt. -263℃ er helt perfekt!",
+    "Nu lader vi stjerne-blandingen hvile i ",
+    "mellem 100.000 og 10 millioner år.",
+    "Så er stjernerne klar",
+    "og vi har nu en åben stjernehob!",
+    "Stjerne har forskellig størrelse, vægt ",
+    "og temperatur."
+]
