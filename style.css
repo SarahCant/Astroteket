@@ -50,13 +50,24 @@ p span {
     grid-template-rows: repeat(12, 1fr);
 }
 
-/* ekstra ramme der dækker astronauten i bunden */
+/* Ekstra ramme, der dækker astronauten i bunden */
 .ramme_bund {
     border-bottom: 50px solid var(--ramme);
     bottom: 0;
     left: 0;
     position: absolute;
     width: 100%;
+    z-index: 8888;
+}
+
+/* Ekstra ramme, der sækker astronauten til venstre */
+
+.ramme_venstre {
+    border-bottom: 50px solid var(--ramme);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
     z-index: 8888;
 }
 
@@ -233,6 +244,11 @@ p span {
 }
 
 .scene2_1 .astronaut {
+   /*  grid-row-start: 5;
+    grid-row-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 5; */
+   /*  grid-area: 13 / 5 / 5 / 1; */
    grid-area: 3 / 1 / 13 / 6;
    justify-self: end;
    width: 150%;
@@ -323,7 +339,7 @@ p span {
 }
 
 .scene3_2 {
-    display: none;
+    /* display: none; */
 }
 
 .scene3_2 .astronaut {
