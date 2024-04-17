@@ -20,6 +20,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
 }
 
+/* --- TEKSTBOKS --- */
 
 p {
     font-family: gluten;
@@ -38,6 +39,8 @@ p span {
     padding: 10px;
 }
 
+/* --- Grid til underscenerne --- */
+
 .subscene {
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,6 +49,18 @@ p span {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 }
+
+/* ekstra ramme der dækker astronauten i bunden */
+.ramme {
+    border-bottom: 50px solid var(--ramme);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 8888;
+}
+
+/* --- SCENE 1 --- */
 
 .scene1_1 {
     background-image: url(img/baggrunde/nr1.jpg);
@@ -63,14 +78,6 @@ p span {
     display: none;
 }
 
-.ramme {
-    border-bottom: 50px solid var(--ramme);
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    z-index: 8888;
-}
 
 .scene1_2 .astronaut {
     grid-area: 6 / 5 / 13 / 9;
