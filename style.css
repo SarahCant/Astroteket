@@ -200,10 +200,38 @@ p span {
 /* SCENE 2 */
 /* 2.1 */
 
+.scene2_1 {
 
+}
 
+.scene2_1 .astronaut {
+    grid-area: 6/;
 
+}
 
+.scene2_1 .kolbe {
+
+}
+
+.scene2_1 .ramme1 {
+    border-bottom: 50px solid var(--ramme);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 8888;
+
+}
+
+.scene2_1 .ramme2 {
+    border-left: 50px solid var(--ramme);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    z-index: 8889;
+
+}
 
 
 
