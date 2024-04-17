@@ -10,6 +10,8 @@ const sc1Txt = [
     "hvordan stjerner bliver skabt og udvikler sig!"
 ];
 
+//scene 3 - tekst-array
+
 const sc3Txt = [
     "Blandingen skal over i en skål.",
     "Skålen er rigtig stor og har en diameter på...",
