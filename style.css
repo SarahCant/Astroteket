@@ -483,4 +483,28 @@ p span {
 }
 
 /* ----------- SCENE 5 -------------- */
+/* --- Scene 5a.1 og 5b.1 --- */
+.scene5_1 {
+    background-image: url(img/baggrunde/nr5.jpg);
+    background-position: center;
+}
+
+.scene5_1 .ur {
+    grid-area: 1/1/2/2;
+    /* transform: scale(0.1); */
+   width: 100%;
+   padding-left: 50px;
+   padding-top: 30px;
+}
+
+.scene5_1 .astronaut {
+    grid-area: 10/3/11/4;
+    height: 115%;
+}
+
+.scene5_1 .gryde {
+    grid-area: 8/7/10/10;
+}
+
+
 
