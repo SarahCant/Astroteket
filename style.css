@@ -9,6 +9,7 @@
     --baggrund: #091b2f;
     --ramme: #151515;
     --dark_neutral: #363636;
+    --accent: #fd9843;
 }
 
 body {
@@ -74,6 +75,37 @@ p span {
 }
 
 /* ----------- SCENE 1 -------------- */
+
+.scene0 {
+    background-image: url(img/baggrunde/nr1.jpg);
+    background-position: center;
+}
+
+.scene0 .astronaut {
+    grid-area: 7 / 4 / 12 / 5;
+}
+
+.scene0 .btn {
+    align-self: center;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0px 10px 5px var(--astronaut);
+    color: var(--ramme);
+    cursor: pointer;
+    font-family: gluten, sans-serif;
+    font-size: 4rem;
+    grid-area: 7 / 8 / 9 / 11;
+    padding: 8% 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.scene0 .btn:hover,
+.scene0 .btn:focus {
+    box-shadow: none;
+    translate: 0 10px;
+}
 
 /* --- Scene 1.1 --- */
 
