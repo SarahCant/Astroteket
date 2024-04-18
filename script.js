@@ -1,15 +1,17 @@
 /* --- Gør alle billeder non-draggable --- */
 
 // Vælger alle billeder
-var billeder = document.querySelectorAll('img');
+let billeder = document.querySelectorAll('img');
 
-// Få ovenstpende til at gå igen for alle img elementer og sæt draggable = false
+// Få ovenstående til at gå igen for alle img elementer og sæt draggable = false
 billeder.forEach(function(img) {
     img.draggable = false;
 });
 
 
-//SCENE 1
+//----------------SCENE 1-------------------
+
+//array med scenens tilhørende tekst
 const sc1Txt = [
     //scene1.1
     //"Når vi kigger op på en skyfri nattehimmel,",
@@ -23,89 +25,121 @@ const sc1Txt = [
     "hvordan stjerner bliver skabt og udvikler sig!"
 ];
 
-const sc11 = document.querySelector(".scene1_1");
-const sc12 = document.querySelector(".scene1_2");
-const sc13 = document.querySelector(".scene1_3");
-
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
 function sc1TxtSkift() {
+
+    //vælg html-element hvor teksten skal vises
     const plads = document.getElementById("txt1");
+
+    //stop funktionen hvis "txt1" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc1 = document.querySelector(".scene1_1");
+    const sc2 = document.querySelector(".scene1_2");
+    const sc3 = document.querySelector(".scene1_3");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
 
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
     const interval = setInterval(() => {
         plads.textContent = sc1Txt[visTxt];
         visTxt++;
 
+        //skift til scene1.2
         if (visTxt === 2) {
-            sc11.style.display = "none";
-            sc12.style.display = "grid";
-            sc13.style.display = "none";
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
+            sc3.style.display = "none";
         }
 
+        //skift til scene1.3
         if (visTxt === 5) {
-            sc11.style.display = "none";
-            sc12.style.display = "none";
-            sc13.style.display = "grid";
+            sc1.style.display = "none";
+            sc2.style.display = "none";
+            sc3.style.display = "grid";
         }
 
+        //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc1Txt.length) {
             clearInterval(interval);
         }
 
-    }, 3000);
+    }, 3000); //skift tekststykke hvert 3. sekund
 }
 
+//start funktionen ved page load
 sc1TxtSkift();
 
-//SCENE 2
+
+//----------------SCENE 2-------------------
+
+//array med scenens tilhørende tekst
 const sc2Txt = [
     //scene2.1
     //"Når du har fundet ingredienserne,",
     "kommer de i kolben.",
     //scene2.2
     "Her er det, du skal finde:",
-    "Gas - især brint og helium",
+    "Gas - især brint og helium,",
     "Grundstoffer, såsom jern og kulstof",
-    "En smule salt",
+    "Og en smule salt",
     //scene2.3
     "Kan du se ingredienserne?",
-    "Prøv at tryk på dem, vi skal bruge.",
+    "Prøv at trykke på dem, vi skal bruge.",
 ];
 
-const sc21 = document.querySelector(".scene2_1");
-const sc22 = document.querySelector(".scene2_2");
-const sc23 = document.querySelector(".scene2_3");
-
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
 function sc2TxtSkift() {
+
+    //vælg html-element hvor teksten skal vises
     const plads = document.getElementById("txt2");
+
+    //stop funktionen hvis "txt2" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc1 = document.querySelector(".scene2_1");
+    const sc2 = document.querySelector(".scene2_2");
+    const sc3 = document.querySelector(".scene2_3");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
 
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
     const interval = setInterval(() => {
         plads.textContent = sc2Txt[visTxt];
         visTxt++;
 
+        //skift til scene2.2
         if (visTxt === 2) {
-            sc21.style.display = "none";
-            sc22.style.display = "grid";
-            sc23.style.display = "none";
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
+            sc3.style.display = "none";
         }
 
+        //skift til scene2.3
         if (visTxt === 6) {
-            sc21.style.display = "none";
-            sc22.style.display = "none";
-            sc23.style.display = "grid";
+            sc1.style.display = "none";
+            sc2.style.display = "none";
+            sc3.style.display = "grid";
         }
 
+        //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc2Txt.length) {
             clearInterval(interval);
         }
 
-    }, 2500);
+    }, 2500); //skift tekststykke hvert 2,5. sekund
 }
 
+//start funktionen ved page load
 sc2TxtSkift();
 
+//----------------SCENE 3-------------------
 
-//SCENE 3
+//array med scenens tilhørende tekst
 const sc3Txt = [
     //scene2.4
     //"Godt klaret!",
@@ -125,80 +159,99 @@ const sc3Txt = [
     //scene3.5
     "Så er stjernerne klar",
     "og vi har nu en åben stjernehob!",
-    "Stjerne har forskellig størrelse, vægt ",
-    "og temperatur."
+    "Stjernerne har forskellig størrelse,",
+    "vægt og temperatur."
 ];
 
-const sc24 = document.querySelector(".scene2_4");
-const sc31 = document.querySelector(".scene3_1");
-const sc32 = document.querySelector(".scene3_2");
-const sc33 = document.querySelector(".scene3_3");
-const sc34 = document.querySelector(".scene3_4");
-const sc35 = document.querySelector(".scene3_5");
-
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
 function sc3TxtSkift() {
+
+    //vælg html-element hvor teksten skal vises
     const plads = document.getElementById("txt3");
+
+    //stop funktionen hvis "txt3" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc0 = document.querySelector(".scene2_4"); //afrunding på scene2
+    const sc1 = document.querySelector(".scene3_1");
+    const sc2 = document.querySelector(".scene3_2");
+    const sc3 = document.querySelector(".scene3_3");
+    const sc4 = document.querySelector(".scene3_4");
+    const sc5 = document.querySelector(".scene3_5");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
 
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
     const interval = setInterval(() => {
         plads.textContent = sc3Txt[visTxt];
         visTxt++;
 
+        //skift til scene3.1
         if (visTxt === 2) {
-            sc24.style.display = "none";
-            sc31.style.display = "grid";
-            sc32.style.display = "none";
-            sc33.style.display = "none";
-            sc34.style.display = "none";
-            sc35.style.display = "none";
+            sc0.style.display = "none";
+            sc1.style.display = "grid";
+            sc2.style.display = "none";
+            sc3.style.display = "none";
+            sc4.style.display = "none";
+            sc5.style.display = "none";
         }
 
+        //skift til scene3.2
         if (visTxt === 5) {
-            sc24.style.display = "none";
-            sc31.style.display = "none";
-            sc32.style.display = "grid";
-            sc33.style.display = "none";
-            sc34.style.display = "none";
-            sc35.style.display = "none";
+            sc0.style.display = "none";
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
+            sc3.style.display = "none";
+            sc4.style.display = "none";
+            sc5.style.display = "none";
         }
 
+        //skift til scene3.3
         if (visTxt === 6) {
-            sc24.style.display = "none";
-            sc31.style.display = "none";
-            sc32.style.display = "none";
-            sc33.style.display = "grid";
-            sc34.style.display = "none";
-            sc35.style.display = "none";
+            sc0.style.display = "none";
+            sc1.style.display = "none";
+            sc2.style.display = "none";
+            sc3.style.display = "grid";
+            sc4.style.display = "none";
+            sc5.style.display = "none";
         }
 
+        //skift til scene3.4
         if (visTxt === 8) {
-            sc24.style.display = "none";
-            sc31.style.display = "none";
-            sc32.style.display = "none";
-            sc33.style.display = "none";
-            sc34.style.display = "grid";
-            sc35.style.display = "none";
+            sc0.style.display = "none";
+            sc1.style.display = "none";
+            sc2.style.display = "none";
+            sc3.style.display = "none";
+            sc4.style.display = "grid";
+            sc5.style.display = "none";
         }
 
+        //skift til scene3.5
         if (visTxt === 10) {
-            sc24.style.display = "none";
-            sc31.style.display = "none";
-            sc32.style.display = "none";
-            sc33.style.display = "none";
-            sc34.style.display = "none";
-            sc35.style.display = "grid";
+            sc0.style.display = "none";
+            sc1.style.display = "none";
+            sc2.style.display = "none";
+            sc3.style.display = "none";
+            sc4.style.display = "none";
+            sc5.style.display = "grid";
         }
 
+        //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc3Txt.length) {
             clearInterval(interval);
         }
 
-    }, 3000);
+    }, 3000); //skift tekststykke hvert 3. sekund
 }
 
+//start funktionen ved page load
 sc3TxtSkift();
 
-//SCENE 4
+//----------------SCENE 4-------------------
+
+//array med scenens tilhørende tekst
 const sc4Txt = [
     //scene4.1
     //"Der kan nu ske to forskellige ting;",
@@ -207,32 +260,46 @@ const sc4Txt = [
     "Vælg den, du helst vil se." //tekst-alternativ: Vælg en stjerne, og se hvad der sker.
 ];
 
-const sc41 = document.querySelector(".scene4_1");
-const sc42 = document.querySelector(".scene4_2");
-
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
 function sc4TxtSkift() {
+
+    //vælg html-element hvor teksten skal vises
     const plads = document.getElementById("txt4");
+
+    //stop funktionen hvis "txt4" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc1 = document.querySelector(".scene4_1");
+    const sc2 = document.querySelector(".scene4_2");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
 
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
     const interval = setInterval(() => {
         plads.textContent = sc4Txt[visTxt];
         visTxt++;
 
+        //skift til scene4.2
         if (visTxt === 2) {
-            sc41.style.display = "none";
-            sc42.style.display = "grid";
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
         }
 
         if (visTxt >= sc4Txt.length) {
             clearInterval(interval);
         }
 
-    }, 3000);
+    }, 3000); //skift tekststykke hvert 3. sekund
 }
 
+//start funktionen ved page load
 sc4TxtSkift();
 
-//SCENE 5A - tekst-array
+//----------------SCENE 5A-------------------
+
+//array med scenens tilhørende tekst
 const sc5aTxt = [
     //scene5a.1
     //"Stjerneblandingen har bedst af at stå i",
@@ -245,35 +312,50 @@ const sc5aTxt = [
     "Det er nu en Hvid Dværg."
 ];
 
-const sc51 = document.querySelector(".scene5_1");
-const sc5a2 = document.querySelector(".scene5a_2");
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
+function sc5aTxtSkift() {
 
-function sc4TxtSkift() {
-    const plads = document.getElementById("txt4");
+    //vælg html-element hvor teksten skal vises
+    const plads = document.getElementById("txt5a");
+
+    //stop funktionen hvis "txt5a" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc1 = document.querySelector(".scene5_1");
+    const sc2 = document.querySelector(".scene5a_2");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
 
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
     const interval = setInterval(() => {
-        plads.textContent = sc4Txt[visTxt];
+        plads.textContent = sc5aTxt[visTxt];
         visTxt++;
 
+        //skift til scene5a.2
         if (visTxt === 2) {
-            sc41.style.display = "none";
-            sc42.style.display = "grid";
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
         }
 
-        if (visTxt >= sc4Txt.length) {
+        //nulstil intervallet, når tekst-arrayets sidste element vises
+        if (visTxt >= sc5aTxt.length) {
             clearInterval(interval);
         }
 
-    }, 3000);
+    }, 2500); //skift tekststykke hvert 2,5. sekund
 }
 
-sc4TxtSkift();
+//start funktionen ved page load
+sc5aTxtSkift();
 
-//SCENE 5B - tekst-array
+//----------------SCENE 5B-------------------
+
+//array med scenens tilhørende tekst
 const sc5bTxt = [
     //scene5b.1
-    "Stjerneblandingen har bedst af at stå i",
+    //"Stjerneblandingen har bedst af at stå i",
     "1 til 30 millioner år mere.",
     //scene5b.2
     "Hov!",
@@ -282,9 +364,141 @@ const sc5bTxt = [
     "…EKSPLODERE!",
     "Sådan en eksplosion kaldes en supernova,", 
     "og den kan efterlade et sort hul.", 
-    "Pas på med at komme for tæt på, for",
-    "se sorte hullers tyngdekraft er så stærk, at",
-    "de opsluger alt omkring til sig - selv lys!"
+    "Pas på med at komme for tæt på,",
+    "for sorte hullers tyngdekraft er så stærk,",
+    "at de opsluger alt omkring sig - selv lys!"
 ];
 
-// document.getElementById("txt5b").innerHTML = sc5bTxt;
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
+function sc5bTxtSkift() {
+
+    //vælg html-element hvor teksten skal vises
+    const plads = document.getElementById("txt5b");
+
+    //stop funktionen hvis "txt5b" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc1 = document.querySelector(".scene5_1");
+    const sc2 = document.querySelector(".scene5b_2");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
+    let visTxt = 0;
+
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
+    const interval = setInterval(() => {
+        plads.textContent = sc5bTxt[visTxt];
+        visTxt++;
+
+        //skift til scene5b.2
+        if (visTxt === 2) {
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
+        }
+
+        //nulstil intervallet, når tekst-arrayets sidste element vises
+        if (visTxt >= sc5bTxt.length) {
+            clearInterval(interval);
+        }
+
+    }, 2500); //skift tekststykke hvert 2,5. sekund
+}
+
+//start funktionen ved page load
+sc5bTxtSkift();
+
+//----------------SCENE 6A-------------------
+
+//array med scenens tilhørende tekst
+const sc6aTxt = [
+    //scene6a.1
+    //"Nu ved vi en masse om stjerner!",
+    //scene6a.2
+    "Tryk på Supernova for at lære mere."
+];
+
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
+function sc6aTxtSkift() {
+
+    //vælg html-element hvor teksten skal vises
+    const plads = document.getElementById("txt6a");
+
+    //stop funktionen hvis "txt6a" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc1 = document.querySelector(".scene6_1");
+    const sc2 = document.querySelector(".scene6a_2");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
+    let visTxt = 0;
+
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
+    const interval = setInterval(() => {
+        plads.textContent = sc6aTxt[visTxt];
+        visTxt++;
+
+        //skift til scene6a.2
+        if (visTxt === 1) {
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
+        }
+
+        //nulstil intervallet, når tekst-arrayets sidste element vises
+        if (visTxt >= sc6aTxt.length) {
+            clearInterval(interval);
+        }
+
+    }, 2500); //skift tekststykke hvert 2,5. sekund
+}
+
+//start funktionen ved page load
+sc6aTxtSkift();
+
+//----------------SCENE 6B-------------------
+
+//array med scenens tilhørende tekst
+const sc6bTxt = [
+    //scene6a.1
+    //"Nu ved vi en masse om stjerner!",
+    //scene6a.2
+    "Tryk på Planetarisk tåge for at lære mere."
+];
+
+//funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
+function sc6bTxtSkift() {
+
+    //vælg html-element hvor teksten skal vises
+    const plads = document.getElementById("txt6b");
+
+    //stop funktionen hvis "txt6b" ikke kan findes
+    if (!plads) return;
+
+    //find og definer scenens underscener
+    const sc1 = document.querySelector(".scene6_1");
+    const sc2 = document.querySelector(".scene6b_2");
+
+    //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
+    let visTxt = 0;
+
+    //angiv tidsintervallet, hvor teksten skifter - samt hvornår tekstens tilhørende billeder vises og skjules
+    const interval = setInterval(() => {
+        plads.textContent = sc6bTxt[visTxt];
+        visTxt++;
+
+        //skift til scene6b.2
+        if (visTxt === 1) {
+            sc1.style.display = "none";
+            sc2.style.display = "grid";
+        }
+
+        //nulstil intervallet, når tekst-arrayets sidste element vises
+        if (visTxt >= sc6bTxt.length) {
+            clearInterval(interval);
+        }
+
+    }, 2500); //skift tekststykke hvert 2,5. sekund
+}
+
+//start funktionen ved page load
+sc6bTxtSkift();
