@@ -1,3 +1,14 @@
+/* --- Gør alle billeder non-draggable --- */
+
+// Vælger alle billeder
+var billeder = document.querySelectorAll('img');
+
+// Få ovenstpende til at gå igen for alle img elementer og sæt draggable = false
+billeder.forEach(function(img) {
+    img.draggable = false;
+});
+
+
 //SCENE 1 - tekst-array
 const sc1Txt = [
     //scene1.1
