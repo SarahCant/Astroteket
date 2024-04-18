@@ -80,11 +80,11 @@ const sc5bTxt = [
     "1 til 30 millioner år mere.",
     //scene5b.2
     "Hov!",
-    "En af de tungeste stjerner er blevet overmoden.", //tekst-alternativ: En af de tungeste stjerner er blevet enormt stor!
+    "En af de tungeste stjerner er blevet enorm!", 
     "Når det sker, kan de finde på at…",
     "…EKSPLODERE!",
-    "Når Supernovaen sker, kan det efterlade", //tekst-alternativ: Sådan en eksplosion kaldes en supernova,
-    "sorte huller.", //tekst-alternativ: og den kan efterlade et sort hul.
+    "Sådan en eksplosion kaldes en supernova,", 
+    "og den kan efterlade et sort hul.", 
     "Pas på med at komme for tæt på, for",
     "se sorte hullers tyngdekraft er så stærk, at",
     "de opsluger alt omkring til sig - selv lys!"
