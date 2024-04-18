@@ -112,7 +112,7 @@ p span {
 .scene1_1 {
     background-image: url(img/baggrunde/nr1.jpg);
     background-position: center left;
-    display: none;
+    display: grid;
 }
 
 .scene1_1 .astronaut {
@@ -150,7 +150,6 @@ p span {
 .scene2_1 {
     background-image: url(img/baggrunde/nr4.jpg);
     background-position: top center;
-    display: none;
 }
 
 .scene2_1 .astronaut {
@@ -241,10 +240,6 @@ p span {
 }
 
 /* --- Scene 2.4 --- */
-
-.scene2_4 {
-    display: none;
-}
 
 .scene2_4 .astronaut {
     grid-area: 3/2/13/9;
@@ -446,10 +441,6 @@ p span {
 
 /* ----------- SCENE 4 -------------- */
 
-.scene4_1 {
-    display: none;
-}
-
 .scene4_1 .astronaut {
     grid-area: 6 / 5 / 13 / 9;
 }
@@ -469,7 +460,8 @@ p span {
 }
 
 .scene4_2 .astronaut {
-    grid-area: 11 / 4 / 13 / 5;
+    align-self: end;
+    grid-area: 11 / 2 / 13 / 3;
     width: 50%;
 }
 
@@ -487,7 +479,9 @@ p span {
 }
 
 /* ----------- SCENE 5 -------------- */
+
 /* --- Scene 5a.1 og 5b.1 --- */
+
 .scene5_1 {
     background-image: url(img/baggrunde/nr5.jpg);
     background-position: center;
@@ -518,6 +512,7 @@ p span {
 /* ----------- SCENE 6 --------------  */
 
 /* --- Scene 6.1 --- */
+
 .scene6_1 {
     display: none;
 }
@@ -527,6 +522,7 @@ p span {
 }
 
 /* --- Scene 6.2 --- */
+
 .scene6_2 {
    /*  display: none; */
 }
@@ -540,14 +536,14 @@ p span {
     font-size: 2.5rem;
 }
 
-
 /* --- Scene 6_2a --- */
+
 .scene6_2 .supernova {
     grid-area: 2/8/4/11;
 }
 
-
 /* --- Scene 6_2b --- */
+
 .scene6_2 .planetarisk_taage {
     grid-area: 2/8/4/11;
 }
