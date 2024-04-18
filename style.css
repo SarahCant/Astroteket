@@ -268,9 +268,13 @@ p span {
 }
 
 .scene3_1 .astronaut {
-    grid-area: 3 / 1 / 13 / 6;
+    grid-area: 4 / 1 / 13 / 5;
     justify-self: end;
     width: 120%;
+}
+
+.scene3_1 .gif {
+    grid-area: 1 / 6 / 13 / 13;
 }
 
 /* --- Scene 3.2 --- */
@@ -286,7 +290,7 @@ p span {
 }
 
 .scene3_2 .gif {
-    grid-area: 5 / 7 / 13 / 11;
+    grid-area: 2 / 6 / 13 / 12;
     width: 100%;
 }
 
@@ -374,7 +378,7 @@ p span {
 .scene3_5 {
     background-image: url(img/baggrunde/nr5.jpg);
     background-position: center;
-    /* display: none; */
+    display: none;
 }
 
 .scene3_5 .astronaut {
