@@ -116,21 +116,21 @@ p span {
 /* --- Scene 2.1 --- */
 
 .scene2_1 {
+    background-image: url(img/baggrunde/nr4.jpg);
+    background-position: top center;
     display: none;
 }
 
 .scene2_1 .astronaut {
-   grid-area: 4 / 1 / 13 / 5;
+   grid-area: 5 / 1 / 13 / 6;
    justify-self: end;
-   width: 130%;
+   width: 110%;
    transform: rotate(15deg);
-   
 }
 
 .scene2_1 .kolbe {
-    grid-area: 1/7/7/10;
-    width: 110%;
-    transform: rotate(320deg);
+    grid-area: 4 / 8 / 9 / 11;
+    rotate: -40deg;
 }
 
 /* --- Scene 2.2 --- */
@@ -163,59 +163,49 @@ p span {
 /* --- Scene 2.3 --- */
 
 .scene2_3 {
+    background-image: url(img/baggrunde/nr3.jpg);
+    background-position: top center;
     display: none;
 }
 
 .scene2_3 .astronaut {
-    grid-area: 11/4/12/5;
-}
-
-.scene2_3 .gas {
-    grid-area: 8/2/10/3;
-    width: 180%;
-}
-
-.scene2_3 .grundstof {
-    grid-area: 11/10/13/11;
-    width: 180%;
-    transform: rotate(340deg);
-}
-
-.scene2_3 .salt {
-    grid-area: 2/9/3/10;
-    width: 180%;
+    align-self: center;
+    grid-area: 10 / 4 / 13 / 5;
+    width: 80%;
 }
 
 .scene2_3 .komet {
-    grid-area: 8/10/10/12;
-    width: 120%;
-    transform: rotate(2deg);
+    grid-area: 6 / 1 / 10 / 4;
+    justify-self: center;
+    rotate: 110deg;
+    width: 75%;
+    z-index: 1;
 }
 
-.scene2_3 .stjerne1 {
-    grid-area: 2/8/4/10;
-}
-
-.scene2_3 .stjerne2 {
-    grid-area: 1/7/3/9;
-    width: 30%;
-}
-
-.scene2_3 .blaa_planet {
-    grid-area: 11/1/13/3;
-}
-
-.scene2_3 .lilla_planet {
-    grid-area: 2/2/3/4;
-}
-
-.scene2_3 .orange_planet {
-    grid-area: 2/5/3/6;
+.scene2_3 .grundstof {
+    align-self: center;
+    grid-area: 8 / 2 / 10 / 3;
+    rotate: 25deg;
 }
 
 .scene2_3 .raket {
-    grid-area: 10/6/12/8;
-    width: 110%;
+    grid-area: 8 / 6 / 12 / 8;
+    rotate: -80deg;
+    z-index: 1;
+}
+
+.scene2_3 .gas {
+    grid-area: 7 / 6 / 9 / 8;
+}
+
+.scene2_3 .stjerne {
+    grid-area: 6 / 9 / 8 / 12;
+    justify-self: center;
+    width: 60%;
+}
+
+.scene2_3 .salt {
+    grid-area: 7 / 11 / 9 / 12;
 }
 
 /* --- Scene 2.4 --- */
