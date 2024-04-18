@@ -474,5 +474,44 @@ p span {
     grid-area: 8/7/10/10;
 }
 
+/* --- Scene 5a --- */
+
+/* --- Scene 5b --- */
 
 
+/* ----------- SCENE 6 --------------  */
+
+/* --- Scene 6.1 --- */
+.scene6_1 {
+    display: none;
+}
+
+.scene6_1 .astronaut {
+    grid-area: 4/4/13/10;
+}
+
+/* --- Scene 6.2 --- */
+.scene6_2 {
+   /*  display: none; */
+}
+
+.scene6_2 .astronaut {
+    grid-area: 3/2/7/6;
+}
+
+.scene6_2 .info_txt {
+    grid-area: 9/8/11/10;
+    font-size: 2.5rem;
+}
+
+
+/* --- Scene 6_2a --- */
+.scene6_2 .supernova {
+    grid-area: 2/8/4/11;
+}
+
+
+/* --- Scene 6_2b --- */
+.scene6_2 .planetarisk_taage {
+    grid-area: 2/8/4/11;
+}
