@@ -450,6 +450,12 @@ p span {
     grid-area: 6 / 5 / 13 / 9;
 }
 
+#pt,
+#sn {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
 .scene4_1 .planetarisk_taage,
 .scene4_2 .planetarisk_taage {
     align-self: center;

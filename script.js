@@ -304,6 +304,10 @@ function sc4TxtSkift() {
     const sc1 = document.querySelector(".scene4_1");
     const sc2 = document.querySelector(".scene4_2");
 
+    //find og definer valgmulighederne
+    const pT = document.getElementById("pt");
+    const sN = document.getElementById("sn");
+
     //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
 
@@ -311,6 +315,16 @@ function sc4TxtSkift() {
     const interval = setInterval(() => {
         plads.textContent = sc4Txt[visTxt];
         visTxt++;
+
+        //vis planetarisk tåge
+        if (visTxt === 1) {
+            pT.style.opacity = "1";
+        }
+
+        //vis supernova
+        if (visTxt === 2) {
+            sN.style.opacity = "1";
+        }
 
         //skift til scene4.2
         if (visTxt === 3) {
