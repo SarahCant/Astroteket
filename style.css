@@ -55,7 +55,7 @@ p span {
 }
 
 /* Ekstra ramme, der dækker astronauten i toppen */
-.ramme_bund {
+.ramme_top {
     border-top: 50px solid var(--ramme);
     left: 0;
     position: absolute;
