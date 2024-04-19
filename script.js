@@ -19,7 +19,7 @@ const sc1Txt = [
     //scene1.2
     "Men i virkeligheden findes der mange milliarder.",
     "De er lavet i enorme gaståger,",
-    "og tager mange millioner år om at udvikle sig.",
+    "og tager flere millioner år om at blive til.",
     //scene1.3
     "Hjælp mig med at følge opskriften og se,",
     "hvordan stjerner bliver skabt og udvikler sig!"
@@ -143,16 +143,17 @@ sc2TxtSkift();
 const sc3Txt = [
     //scene2.4
     //"Godt klaret!",
-    "Du har fundet alle stjernernes ingredienser.",
+    "Du har fundet stjernernes ingredienser.",
     //scene3.1
-    "Blandingen skal over i en skål.",
-    "Skålen er rigtig stor og har en diameter på",
+    "Blandingen skal over i en stor skål.",
+    "Den har en diameter på",
     "28 millioner milliarder meter.",
     //scene3.2
     "Så skal vi røre det hele godt sammen.",
     //scene3.3
     "Blandingen har brug for at stå et koldt sted.",
-    "Helst så koldt som muligt. -263℃ er helt perfekt!",
+    "Helst så koldt som muligt.",
+    "-263°C er helt perfekt!",
     //scene3.4
     "Nu lader vi stjerne-blandingen hvile",
     "imellem 100.000 og 10 millioner år.",
@@ -219,7 +220,7 @@ function sc3TxtSkift() {
         }
 
         //skift til scene3.4
-        if (visTxt === 8) {
+        if (visTxt === 9) {
             sc0.style.display = "none";
             sc1.style.display = "none";
             sc2.style.display = "none";
@@ -229,7 +230,7 @@ function sc3TxtSkift() {
         }
 
         //skift til scene3.5
-        if (visTxt === 10) {
+        if (visTxt === 11) {
             sc0.style.display = "none";
             sc1.style.display = "none";
             sc2.style.display = "none";
@@ -255,9 +256,10 @@ sc3TxtSkift();
 const sc4Txt = [
     //scene4.1
     //"Der kan nu ske to forskellige ting;",
-    "Planetarisk tåge eller Supernova.", //tekst-alternativ: fremtiden for den varme røde stjerne eller fremtiden for den endnu varmere, blå stjerne...
+    "Planetarisk tåge",
+    "eller Supernova.",
     //scene4.2
-    "Vælg den, du helst vil se." //tekst-alternativ: Vælg en stjerne, og se hvad der sker.
+    "Vælg den, du helst vil se."
 ];
 
 //funktion til at skifte teksten efter et antal sekunder samt tilhørende billede
@@ -282,7 +284,7 @@ function sc4TxtSkift() {
         visTxt++;
 
         //skift til scene4.2
-        if (visTxt === 2) {
+        if (visTxt === 3) {
             sc1.style.display = "none";
             sc2.style.display = "grid";
         }
@@ -291,7 +293,7 @@ function sc4TxtSkift() {
             clearInterval(interval);
         }
 
-    }, 3000); //skift tekststykke hvert 3. sekund
+    }, 2300); //skift tekststykke hvert 2,3. sekund
 }
 
 //start funktionen ved page load
@@ -344,7 +346,7 @@ function sc5aTxtSkift() {
             clearInterval(interval);
         }
 
-    }, 2500); //skift tekststykke hvert 2,5. sekund
+    }, 3000); //skift tekststykke hvert 3. sekund
 }
 
 //start funktionen ved page load

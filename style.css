@@ -82,6 +82,12 @@ p span {
     display: grid;
 }
 
+.scene0 .info_txt {
+    text-shadow: 5px 5px 2px var(--ramme);
+    font-size: 5rem;
+    grid-area: 4 / 2 / 5 / 12;
+}
+
 .scene0 .astronaut {
     grid-area: 7 / 4 / 12 / 5;
 }
@@ -96,7 +102,7 @@ p span {
     cursor: pointer;
     font-family: gluten, sans-serif;
     font-size: 4rem;
-    grid-area: 7 / 8 / 9 / 11;
+    grid-area: 8 / 9 / 10 / 12;
     padding: 8% 0;
     text-align: center;
     text-decoration: none;
