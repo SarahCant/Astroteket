@@ -84,6 +84,16 @@ p span {
     z-index: 8888;
 }
 
+/* Ekstra ramme der dækker astronauten i højre side */
+.ramme_højre {
+    border-right: 50px solid var(--ramme);
+    height: 100%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    z-index: 8888;
+}
+
 /* ----------- SCENE 1 -------------- */
 
 .scene0 {
