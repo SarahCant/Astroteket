@@ -64,6 +64,10 @@ function sc1TxtSkift() {
         //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc1Txt.length) {
             clearInterval(interval);
+            // Skift til næste scene 3 sekunder efter sidste tekst-stykke er vist
+            setTimeout(() => {
+                window.location.href = "scene2.html";
+            }, 3000);
         }
 
     }, 3000); //skift tekststykke hvert 3. sekund
@@ -104,6 +108,10 @@ function sc2TxtSkift() {
     const sc2 = document.querySelector(".scene2_2");
     const sc3 = document.querySelector(".scene2_3");
 
+    const gas = document.getElementById("intro_gas");
+    const grundstof = document.getElementById("intro_grundstof");
+    const salt = document.getElementById("intro_salt");
+
     //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
 
@@ -117,6 +125,21 @@ function sc2TxtSkift() {
             sc1.style.display = "none";
             sc2.style.display = "grid";
             sc3.style.display = "none";
+        }
+
+        //vis gas
+        if (visTxt === 3) {
+            gas.style.opacity = "1";
+        }
+
+        //vis grundstof
+        if (visTxt === 4) {
+            grundstof.style.opacity = "1";
+        }
+
+        //vis salt
+        if (visTxt === 5) {
+            salt.style.opacity = "1";
         }
 
         //skift til scene2.3
@@ -136,6 +159,63 @@ function sc2TxtSkift() {
 
 //start funktionen ved page load
 sc2TxtSkift();
+
+/*
+//funktion til klik på ingredienserne
+
+function fundetIngrediens() {
+
+    //variabel til antal fundne ingredienser
+    let antalFundet = 0;
+
+    //find og definer ingredienserne
+    const grundstof = document.getElementById("knap_grundstof");
+    const gas = document.getElementById("knap_gas");
+    const salt = document.getElementById("knap_salt");
+    
+    //tilføj eventlisteners til klik og tilhørende effekt + display none, så man kan trykke på elementerne i tilfældig rækkefølge
+    grundstof.addEventListener("click", function() {
+        grundstof.style.transform = "scale(4) translate(60%, -100%)";
+        grundstof.style.opacity = "0";
+        setTimeout(() => {
+            grundstof.style.display = "none";
+        }, 1500);
+        antalFundet++;
+        alleIngredienserFundet();
+    });
+    
+    gas.addEventListener("click", function() {
+        gas.style.transform = "scale(4) translate(0, -20%)";
+        gas.style.opacity = "0";
+        setTimeout(() => {
+            gas.style.display = "none";
+        }, 1500);
+        antalFundet++;
+        alleIngredienserFundet();
+    });
+    
+    salt.addEventListener("click", function() {
+        salt.style.transform = "scale(6) translate(-70%, -20%)";
+        salt.style.opacity = "0";
+        setTimeout(() => {
+            salt.style.display = "none";
+        }, 1500);
+        antalFundet++;
+        alleIngredienserFundet();
+    });
+
+    function alleIngredienserFundet() {
+        if (antalFundet === 3) {
+            setTimeout(() => {
+                window.location.href = "scene3.html";
+            }, 1600);
+        }
+    }
+}
+
+//kald funktionen
+fundetIngrediens();
+*/
 
 //----------------SCENE 3-------------------
 
@@ -242,6 +322,10 @@ function sc3TxtSkift() {
         //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc3Txt.length) {
             clearInterval(interval);
+            // Skift til næste scene 3 sekunder efter sidste tekst-stykke er vist
+            setTimeout(() => {
+                window.location.href = "scene4.html";
+            }, 3000);
         }
 
     }, 3000); //skift tekststykke hvert 3. sekund
@@ -344,6 +428,10 @@ function sc5aTxtSkift() {
         //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc5aTxt.length) {
             clearInterval(interval);
+            // Skift til næste scene 3 sekunder efter sidste tekst-stykke er vist
+            setTimeout(() => {
+                window.location.href = "scene6a.html";
+            }, 3000); //tilpas evt. til videoens længde
         }
 
     }, 3000); //skift tekststykke hvert 3. sekund
@@ -401,6 +489,10 @@ function sc5bTxtSkift() {
         //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc5bTxt.length) {
             clearInterval(interval);
+            // Skift til næste scene 3 sekunder efter sidste tekst-stykke er vist
+            setTimeout(() => {
+                window.location.href = "scene6b.html";
+            }, 3000); //tilpas evt. til videoens længde
         }
 
     }, 2500); //skift tekststykke hvert 2,5. sekund
@@ -504,3 +596,20 @@ function sc6bTxtSkift() {
 
 //start funktionen ved page load
 sc6bTxtSkift();
+
+
+//Nedtælling i scene6
+let countdown = 30;
+
+function updateCountdown() {
+    document.getElementById("countdown").innerText = countdown;
+    
+    if (countdown === 0) {
+        clearInterval(timer);
+        window.location.href = "index.html";
+    } else {
+        countdown--;
+    }
+}
+
+let timer = setInterval(updateCountdown, 1000);

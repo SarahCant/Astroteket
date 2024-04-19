@@ -181,16 +181,21 @@ p span {
 
 .scene2_2 .gas {
     grid-area: 1/6/4/9;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
 .scene2_2 .grundstof {
     grid-area: 5/10/7/13;
     transform: rotate(15deg);
-
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
 .scene2_2 .salt {
     grid-area: 8/7/10/10;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
 /* --- Scene 2.3 --- */
@@ -207,17 +212,18 @@ p span {
 }
 
 .scene2_3 .komet {
-    grid-area: 6 / 1 / 10 / 4;
+    grid-area: 7 / 1 / 11 / 3;
     justify-self: center;
     rotate: 110deg;
-    width: 75%;
     z-index: 1;
 }
 
 .scene2_3 .grundstof {
     align-self: center;
-    grid-area: 8 / 2 / 10 / 3;
+    grid-area: 8 / 2 / 10 / 4;
     rotate: 25deg;
+    transition: transform 0.7s ease-in-out, opacity 1.4s ease-in-out;
+    width: 80%;
 }
 
 .scene2_3 .raket {
@@ -228,6 +234,8 @@ p span {
 
 .scene2_3 .gas {
     grid-area: 7 / 6 / 9 / 8;
+    transition: transform 0.7s ease-in-out, opacity 1.4s ease-in-out;
+    
 }
 
 .scene2_3 .stjerne {
@@ -238,6 +246,7 @@ p span {
 
 .scene2_3 .salt {
     grid-area: 7 / 11 / 9 / 12;
+    transition: transform 0.7s ease-in-out, opacity 1.4s ease-in-out;
 }
 
 /* --- Scene 2.4 --- */
@@ -514,8 +523,14 @@ p span {
 
 .scene6a_2 .info_txt,
 .scene6b_2 .info_txt {
-    grid-area: 9/8/11/10;
+    grid-area: 9 / 7 / 11 / 12;
     font-size: 2.5rem;
+}
+
+#countdown {
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 /* --- Scene 6_2a --- */
