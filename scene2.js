@@ -41,6 +41,7 @@ function fundetIngrediens() {
         alleIngredienserFundet();
     });
 
+    //funktion, der skifter til næste scene, når alle 3 ingredienser er fundet
     function alleIngredienserFundet() {
         if (antalFundet === 3) {
             setTimeout(() => {
