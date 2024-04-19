@@ -54,6 +54,16 @@ p span {
     grid-template-rows: repeat(12, 1fr);
 }
 
+/* Ekstra ramme, der dækker astronauten i toppen */
+.ramme_bund {
+    border-top: 50px solid var(--ramme);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 8888;
+}
+
 /* Ekstra ramme, der dækker astronauten i bunden */
 .ramme_bund {
     border-bottom: 50px solid var(--ramme);
@@ -504,6 +514,12 @@ p span {
 /* --- Scene 5a --- */
 
 /* --- Scene 5b --- */
+
+video {
+    align-self: center;
+    grid-area: 1 / 1 / 13 / 13;
+    max-width: 100%;
+}
 
 
 /* ----------- SCENE 6 --------------  */
