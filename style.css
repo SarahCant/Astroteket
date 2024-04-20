@@ -55,7 +55,7 @@ p span {
 }
 
 /* Ekstra ramme, der dækker astronauten i toppen */
-.ramme_bund {
+.ramme_top {
     border-top: 50px solid var(--ramme);
     left: 0;
     position: absolute;
@@ -79,6 +79,16 @@ p span {
     border-left: 50px solid var(--ramme);
     height: 100%;
     left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 8888;
+}
+
+/* Ekstra ramme der dækker astronauten i højre side */
+.ramme_højre {
+    border-right: 50px solid var(--ramme);
+    height: 100%;
+    right: 0;
     position: absolute;
     top: 0;
     z-index: 8888;
@@ -511,9 +521,7 @@ p span {
     grid-area: 8/7/10/10;
 }
 
-/* --- Scene 5a --- */
-
-/* --- Scene 5b --- */
+/* --- Scene 5a og 5b --- */
 
 video {
     align-self: center;
