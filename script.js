@@ -430,6 +430,7 @@ function sc5bTxtSkift() {
     //find og definer scenens underscener
     const sc1 = document.querySelector(".scene5_1");
     const sc2 = document.querySelector(".scene5b_2");
+    const astro = document.querySelector(".scene5b_2 > .astronaut");
 
     //sæt den viste tekst (skrevet i html) som udgangspunktet "0"
     let visTxt = 0;
@@ -445,13 +446,17 @@ function sc5bTxtSkift() {
             sc2.style.display = "grid";
         }
 
+        if (visTxt === 6) {
+            astro.style.transform = "translateX(-2px)";
+        }
+
         //nulstil intervallet, når tekst-arrayets sidste element vises
         if (visTxt >= sc5bTxt.length) {
             clearInterval(interval);
             // Skift til næste scene 3 sekunder efter sidste tekst-stykke er vist
             setTimeout(() => {
                 window.location.href = "scene6b.html";
-            }, 3000); //tilpas evt. til videoens længde
+            }, 3500); //tilpas evt. til videoens længde
         }
 
     }, 2500); //skift tekststykke hvert 2,5. sekund
