@@ -513,12 +513,13 @@ p span {
 }
 
 .scene5_1 .astronaut {
-    grid-area: 10/3/11/4;
-    height: 115%;
+    align-self: end;
+    grid-area: 8 / 3 / 12 / 4;
 }
 
 .scene5_1 .gryde {
-    grid-area: 8/7/10/10;
+    grid-area: 7 / 6 / 11 / 9;
+    width: 80%;
 }
 
 /* --- Scene 5a og 5b --- */
@@ -536,7 +537,6 @@ video {
     transform: translateX(-200%);
     transition: transform 1s ease-in;
 }
-
 
 /* ----------- SCENE 6 --------------  */
 
